@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Epochs - Tallow</name>
+    <author>DetVisor</author>
+	
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+	
+	<packageId>det.epochstallow</packageId>
+	<description>Render tallow from raw meat, craft long-lasting tallow torches that need no fuel or make tallow hearths to heat up your igloos!
+	</description>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    </loadAfter>
+
+</ModMetaData>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Pure stuffs: Basics ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>DV_Tallow</defName>
+    <label>tallow</label>
+    <description>A rendered form of animal fat, prominently melted and soaked into cloth to create long-lasting torches. Many cultures have a deep relationship with different forms of animal fat, using it as fuel for oil lamps, or eating it directly as a delicacy.</description>
+    <stackLimit>75</stackLimit>	
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Resource/Lard</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <MarketValue>2</MarketValue>
+      <Mass>0.04</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_FoodPoisonable" />
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>AnimalProduct</foodType>
+    </ingestible>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>
